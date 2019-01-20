@@ -1,0 +1,84 @@
+{
+  "mentors": [
+    {
+      "id": 1,
+      "name": "Bhavya Chandra Mentor",
+      "available": true,
+      "mentorship_category": 1,
+      "about": "I am etc etc ",
+      "professional": false,
+      "student": true,
+      "company/school": "Nanyang Technological University",
+      "gratitude": 0,
+      "interests": [
+        {
+          "id": 2,
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Noopur Jain Mentee",
+      "available": true,
+      "mentorship_category": 2,
+      "about": "I am etc etc ",
+      "professional": true,
+      "student": false,
+      "company/school": "Holaspace",
+      "gratitude": 0,
+      "interests": []
+    },
+    {
+      "id": 3,
+      "name": "Sanjana Jayakumar",
+      "available": true,
+      "mentorship_category": 3,
+      "about": "I am etc etc ",
+      "professional": true,
+      "student": true,
+      "company/school": "JP Morgan and  part-time diploma at NTU",
+      "gratitude": 0,
+      "interests": []
+    },
+    {
+      "id": 4,
+      "name": "Shubham Mentor",
+      "available": true,
+      "mentorship_category": 1,
+      "about": "I am Software developer ",
+      "professional": true,
+      "student": true,
+      "company/school": "Nanyang Technological University",
+      "gratitude": 0,
+      "interests": [
+        {
+          "id": 3,
+          "level": 1
+        }
+      ]
+    }
+  ],
+  "mentees": [
+    {
+      "id": 101,
+      "name": "Ronika Das",
+      "interests": "Full stack Development"
+    },
+    {
+      "id": 102,
+      "name": "Anushka",
+      "interests": "Full Stack Development"
+    },
+    {
+      "id": 103,
+      "name": "Ram",
+      "interests": "Data Science"
+    },
+    {
+      "id": 104,
+      "name": "Aditi",
+      "interests": "Data Science"
+    }
+  ]
+}
