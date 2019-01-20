@@ -1,0 +1,344 @@
+{
+	"info": {
+		"_postman_id": "45d81bed-e440-451f-b307-6e542b3e0d2b",
+		"name": "task1",
+		"description": "A collection of GET,POST,PUT and DELETE requests to mentor and mentee profiles in json ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/mentors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/mentors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mentors"
+					]
+				},
+				"description": "GET request to get the list of mentor profiles in json format"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/mentees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/mentees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mentees"
+					]
+				},
+				"description": "GET request to get the list of mentee profiles in json"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/mentees",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"id\": 104,\n        \"name\": \"Aditi\",\n        \"interests\": \"Data Science\"\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/mentees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mentees"
+					]
+				},
+				"description": "a POST request to add mentee profile of Aditi"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/mentees",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"id\": 105,\n        \"name\": \"Avi\",\n        \"interests\": \"Machine Learning\"\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/mentees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mentees"
+					]
+				},
+				"description": "a POST request to add mentee profile of Avi"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/mentees",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"id\": 105,\n        \"name\": \"Avi\",\n        \"interests\": \"Machine Learning\"\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/mentees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mentees"
+					]
+				},
+				"description": "GET request"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/mentors",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n      \"id\": 4,\n      \"name\": \"Shubham Mentor\",\n      \"available\": true,\n      \"mentorship_category\": 1,\n      \"about\": \"I am etc etc \",\n      \"professional\": false,\n      \"student\": true,\n      \"company/school\": \"Nanyang Technological University\",\n      \"gratitude\": 0,\n      \"interests\": [\n        {\n          \"id\": 3,\n          \"level\": 1\n        }\n      ]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/mentors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mentors"
+					]
+				},
+				"description": "POST request to add mentor profile of Shubham"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/mentors",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n      \"id\": 5,\n      \"name\": \"Megha Mentor\",\n      \"available\": true,\n      \"mentorship_category\": 1,\n      \"about\": \"I am etc etc \",\n      \"professional\": false,\n      \"student\": true,\n      \"company/school\": \"Nanyang Technological University\",\n      \"gratitude\": 0,\n      \"interests\": [\n        {\n          \"id\": 3,\n          \"level\": 1\n        }\n      ]\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/mentors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mentors"
+					]
+				},
+				"description": "POST request to add mentor profile of Megha"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/mentors/4",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n      \"id\": 4,\n      \"name\": \"Shubham Mentor\",\n      \"available\": true,\n      \"mentorship_category\": 1,\n      \"about\": \"I am Software developer \",\n      \"professional\": true,\n      \"student\": true,\n      \"company/school\": \"Nanyang Technological University\",\n      \"gratitude\": 0,\n      \"interests\": [\n        {\n          \"id\": 3,\n          \"level\": 1\n        }\n      ]\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/mentors/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mentors",
+						"4"
+					]
+				},
+				"description": "PUT request to update profile details of mentor with id=4"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/mentees/101",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n      \"id\": 101,\n      \"name\": \"Ronika Das\",\n      \"interests\": \"Full stack Development\"\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/mentees/101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mentees",
+						"101"
+					]
+				},
+				"description": "Update profile of mentee with id 101"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/mentees/105",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n      \"id\": 101,\n      \"name\": \"Ronika Das\",\n      \"interests\": \"Full stack Development\"\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/mentees/105",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mentees",
+						"105"
+					]
+				},
+				"description": "Delete mentee profile"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/mentors/5",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n      \"id\": 5,\n      \"name\": \"Megha Mentor\",\n      \"available\": true,\n      \"mentorship_category\": 1,\n      \"about\": \"I am etc etc \",\n      \"professional\": false,\n      \"student\": true,\n      \"company/school\": \"Nanyang Technological University\",\n      \"gratitude\": 0,\n      \"interests\": [\n        {\n          \"id\": 3,\n          \"level\": 1\n        }\n      ]\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/mentors/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mentors",
+						"5"
+					]
+				},
+				"description": "Delete mentor profile"
+			},
+			"response": []
+		}
+	]
+}
